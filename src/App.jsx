@@ -16,16 +16,16 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<SignupPage />}></Route>
-        <Route path="/login" element={<LoginPage />}></Route>
-        <Route path="/domain" element={<Domain />}></Route>
+        <Route path="login" element={<LoginPage />}></Route>
+        <Route path="domain" element={<Domain />}></Route>
 
-        <Route path="/dashboard/:zoneId" element={<Dashboard />}></Route>
-        <Route path="/analytics/:zoneId" element={<PieChart />}></Route>
+        <Route path="dashboard/:zoneId" element={<Dashboard />}></Route>
+        <Route path="analytics/:zoneId" element={<PieChart />}></Route>
         <Route
-          path="/update/:zoneId/:name/:recordType"
+          path="update/:zoneId/:name/:recordType"
           element={<UpdateDNS />}
         ></Route>
-        <Route path="/add/:zoneId" element={<AddRecord />}></Route>
+        <Route path="add/:zoneId" element={<AddRecord />}></Route>
       </Routes>
     </>
   );
